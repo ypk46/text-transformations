@@ -9,3 +9,12 @@ export const CapitalizeEach = (text: string) => {
     .map(s => s.charAt(0).toUpperCase() + s.substring(1))
     .join(' ');
 };
+
+export const ReplaceAll = (text: string, newText: string, toReplace: string[]) => {
+  const special = /[\[\\\^\$\.\|\?\*\+\(\)\{\}]+/g;
+  for (let replace of toReplace) {
+    if (replace.match(special)) replace = `\\${replace}`;
+    text = text.replace(new RegExp(`${replace}`, 'g'), newText);
+  }
+  return text;
+};
