@@ -13,7 +13,9 @@ export const CapitalizeEach = (text: string) => {
 export const ReplaceAll = (text: string, newText: string, toReplace: string[]) => {
   const special = /[\[\\\^\$\.\|\?\*\+\(\)\{\}]+/g;
   for (let replace of toReplace) {
-    if (replace.match(special)) replace = `\\${replace}`;
+    if (replace.match(special)) {
+      replace = `\\${replace}`;
+    }
     text = text.replace(new RegExp(`${replace}`, 'g'), newText);
   }
   return text;
