@@ -26,7 +26,14 @@ Using `import`
 Capitalize each word of a string
 
     console.log(TextTransformations.CapitalizeEach("hello world"));
+    // Hello World
 
 Clear uncommon spaces (like multiple spaces between words / spaces at the end or start of the string)
 
-    console.log(TextTransformations.ClearSpaces("hello world"));
+    console.log(TextTransformations.ClearSpaces("Hello   World "));
+    // Hello World
+
+Replace all occurrences of an array of matches
+
+    console.log(TextTransformations.ReplaceAll("(889) (849)-(8495)", "", ["(", ")", "-", " "]));
+    // 8898498495
