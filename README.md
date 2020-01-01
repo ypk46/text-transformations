@@ -5,6 +5,12 @@
   <a href="https://www.npmjs.org/package/text-transformations">
     <img src="https://img.shields.io/npm/v/text-transformations" alt="NPM Version" />
   </a>
+  <a href="https://www.codacy.com/manual/ypk46/text-transformations?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=ypk46/text-transformations&amp;utm_campaign=Badge_Grade">
+    <img src="https://api.codacy.com/project/badge/Grade/8bbf5f0beb2c4db9b93f19f387754c7a"/>
+  </a>
+  <a href="https://www.codacy.com/manual/ypk46/text-transformations?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=ypk46/text-transformations&amp;utm_campaign=Badge_Coverage">
+    <img src="https://api.codacy.com/project/badge/Coverage/8bbf5f0beb2c4db9b93f19f387754c7a"/>
+  </a>
 </p>
 
 ## Installation
